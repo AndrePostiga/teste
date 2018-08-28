@@ -1,0 +1,39 @@
+//Buttons
+@mixin button_comprar(){
+    background: $midgrey;
+    text-transform: uppercase;
+    font-size: rem(21px);
+    letter-spacing: 1px;
+    padding: 10px 40px 10px 40px;
+    color: white;
+}
+
+@mixin button_buscar(){
+    background: $secondaryColor;
+    font-weight: 600;
+    font-size: rem(14px);
+    padding: 20px 15px 20px 15px;
+    border:none;
+    text-align: center;
+    color: $primaryColor;
+}
+
+@mixin button_menu(){  
+    
+    font-size: rem(14px);
+    font-weight: 400;    
+    text-align: center;
+    padding: 20px 0 35px 0;
+    border: 1px solid $black;
+    width: 200px;
+    height: 20px;
+    color: $darkgrey;
+}
+
+@mixin button_enviar(){
+    background: $primaryColor;
+    font-size: rem(14px);
+    padding: 10px 40px 10px 40px;
+    border: none;
+    color: white;
+}

@@ -1,0 +1,29 @@
+//fonts
+@import 'https://fonts.googleapis.com/css?family=Oswald:400,300|Eczar:400';
+
+@mixin text_header($tamanho: 14px, $font-weight:400){    
+    font-family: "Roboto", sans-serif;
+    font-size: $tamanho;
+    font-weight: $font-weight;
+    line-height: 1.2;
+    opacity: 1.00;   
+    color: $white
+}
+
+@mixin text_corpo($tamanho: 14px, $font-weight:400){    
+    font-family: "Roboto", sans-serif;
+    font-size: $tamanho;
+    font-weight: $font-weight;
+    line-height: 1.2;
+    opacity: 1.00;   
+    color: $darkgrey
+}
+
+@mixin titulo($tamanho:18px, $font-weight:400){
+    font-size: $tamanho;
+    font-weight: $font-weight;
+    //line-height: 1.2;
+    //opacity: 1.00;
+    //margin: 30px 0 15px 0;        
+    color: $primaryColor;
+}

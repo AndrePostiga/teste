@@ -1,0 +1,103 @@
+//footer
+
+#footer {
+
+    .footer_top {
+        background-color: $lightergrey;
+        padding: 55px 0 0 0;
+
+        h3 {
+            @include text_corpo(16px, 700);
+            margin: 0 0 40px 0;
+        }
+
+        h4 {
+            @include text_corpo(16px, 700);
+            margin: 10px 0 20px 0;
+        }
+
+        a,
+        p {
+            @include text_corpo(12px, 600);
+        }
+        
+
+        .links{
+            @include span-columns(4);            
+            display: flex;
+            align-content: flex-start;    
+            justify-content: space-around;  
+
+            .ajuda {
+                @include shift(3);
+            }
+
+            .nav {
+                ul,
+                li {
+                    margin: 40px 0 40px 0;
+                } 
+            }
+        }
+
+        .selos {
+            
+            ul,
+            li {
+                display: inline;
+            }
+
+            
+            .pagamento {
+                @include span-columns(2);                              
+
+                img {
+                    padding: 5px;
+                    width: 30px;
+                    @include border-radius(10%);
+                    border: 1px solid $lightgrey;
+                }
+                
+            }
+
+            .certificados {
+                @include span-columns(2.5);
+            }
+
+        }
+
+        .contato {
+            @include span-columns(3.5);
+
+            .sociais {
+                margin: 20px auto;
+            }            
+        }
+
+    }
+
+    .footer_bottom {
+        background-color: $primaryColorLight;
+        padding: 30px 0 30px 0;
+
+        .autorais {
+            @include span-columns(10);
+            font-size: rem(10px);
+            color: white;
+        }
+
+        .logos {
+            @include span-columns(2);             
+
+            .ecan {
+                float: right;
+            }
+                
+
+            img {
+                width: 80px;
+            }
+        }
+    }
+
+}

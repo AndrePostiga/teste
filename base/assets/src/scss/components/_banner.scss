@@ -1,0 +1,39 @@
+#banner {    
+    
+    
+    .listas {
+        padding: 10px 0 10px 0;    
+        text-align: center;        
+    }
+
+    
+    .primeiraLista {
+        padding: 0 0 0 30px;
+        @include span-columns(7);
+
+        ul,
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+
+            .comprar {
+                @include button_comprar;
+                margin-left: 40px;
+            }
+        }        
+    }
+    
+    .segundaLista {   
+
+        .produto {
+            @include span-columns(1);
+        }
+
+        @include media($mobile){
+            display: none;
+        }
+    }
+
+}
